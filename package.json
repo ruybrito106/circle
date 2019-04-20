@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "node node_modules/react-native/local-cli/cli.js run-android",
     "test": "jest",
     "compile": "tsc --noEmit -p . --pretty",
     "format": "npm-run-all format:*",
@@ -30,7 +30,7 @@
     "mobx-state-tree": "^3.12.2",
     "ramda": "0.25.0",
     "react": "16.8.3",
-    "react-native": "0.59.3",
+    "react-native": "^0.59.6",
     "react-native-gesture-handler": "1.0.9",
     "react-native-keychain": "3.0.0",
     "react-native-localize": "^1.0.0",
@@ -69,7 +69,7 @@
     "react-powerplug": "0.1.5",
     "react-test-renderer": "16.8.3",
     "rimraf": "2.6.2",
-    "solidarity": "2.1.0",
+    "solidarity": "^2.3.1",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
     "typescript": "3.0.3"

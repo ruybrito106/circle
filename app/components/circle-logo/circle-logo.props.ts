@@ -1,3 +1,5 @@
+import { ViewStyle } from "react-native"
+
 export interface CircleLogoProps {
   /** Background color of outer circle */
   outerCircleColor: string
@@ -7,4 +9,7 @@ export interface CircleLogoProps {
 
   /** Width and height of circle's view */
   dimension: number
+
+  /** View style */
+  viewStyle?: ViewStyle
 }

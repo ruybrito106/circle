@@ -9,14 +9,14 @@ import { CircleLogoProps } from "./circle-logo.props"
  */
 export function CircleLogo(props: CircleLogoProps) {
   // grab the props
-  const { outerCircleColor, innerCircleColor, dimension } = props
+  const { outerCircleColor, innerCircleColor, dimension, viewStyle } = props
   const circleCenter = dimension / 2.0
   const outerCircleRadius = dimension / 2.0
   const innerCircleRadius = outerCircleRadius - 18 // 18 is the distance between any point in the edge of the outter circle and the edge of the inner circle
   const viewPortSetting = `0 0 ${dimension.toString()} ${dimension.toString()}`
 
   return (
-    <View>
+    <View style={viewStyle}>
       <Svg height={dimension.toString()} width={dimension.toString()} viewBox={viewPortSetting}>
         <Circle
           cx={circleCenter.toString()}

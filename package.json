@@ -32,6 +32,7 @@
     "react": "16.8.3",
     "react-native": "^0.59.6",
     "react-native-gesture-handler": "1.0.9",
+    "react-native-google-signin": "^2.0.0",
     "react-native-keychain": "3.0.0",
     "react-native-localize": "^1.0.0",
     "react-native-splash-screen": "3.1.1",

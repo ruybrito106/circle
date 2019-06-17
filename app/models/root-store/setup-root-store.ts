@@ -1,9 +1,9 @@
 import { onSnapshot } from "mobx-state-tree"
-import { RootStoreModel, RootStore } from "./root-store"
-import { Environment } from "../environment"
-import * as storage from "../../utils/storage"
-import { Reactotron } from "../../services/reactotron"
 import { Api } from "../../services/api"
+import { Reactotron } from "../../services/reactotron"
+import * as storage from "../../utils/storage"
+import { Environment } from "../environment"
+import { RootStore, RootStoreModel } from "./root-store"
 
 /**
  * The key we'll be saving our state as within async storage.
@@ -23,10 +23,15 @@ export async function setupRootStore() {
     // load data from storage
     data = (await storage.load(ROOT_STATE_STORAGE_KEY)) || {}
     rootStore = RootStoreModel.create(data, env)
-  } catch(e) {
+  } catch (e) {
     // if there's any problems loading, then let's at least fallback to an empty state
     // instead of crashing.
-    rootStore = RootStoreModel.create({}, env)
+    rootStore = RootStoreModel.create(
+      {
+        circleUser: undefined,
+      },
+      env,
+    )
 
     // but please inform us what happened
     __DEV__ && console.tron.error(e.message, null)

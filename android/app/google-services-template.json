@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "452855231094",
+    "firebase_url": "https://innercircle-1555271944379.firebaseio.com",
+    "project_id": "innercircle-1555271944379",
+    "storage_bucket": "innercircle-1555271944379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452855231094:android:ced711135ec28ad0",
+        "android_client_info": {
+          "package_name": "com.circleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452855231094-5fomrsvk41r3b29334shgld5ghfqep96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.circleapp",
+            "certificate_hash": "1af31bdaeaedf77a427fe5e45b411fb6c5cbcad1"
+          }
+        },
+        {
+          "client_id": "452855231094-d7osu3mmrra83mo8iqp0649rv46prugv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "<API_KEY_HERE>"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452855231094-d7osu3mmrra83mo8iqp0649rv46prugv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
